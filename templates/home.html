@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+</head>
+<body>
+	<header>
+		<h1>Welcome</h1>
+	</header>
+	<main>
+		<p>This is the home page.</p>
+	</main>
+
+    {% for user in users %}
+        <ul>
+            <li>ID : {{user.id}}</li>
+            <li>Name : {{user.name}}</li>
+            <li>email : {{user.email}}</li>
+            <li>age : {{user.age}}</li>
+        </ul>
+        <hr>
+    {% endfor %}
+
+
+
+
+</body>
+</html>
